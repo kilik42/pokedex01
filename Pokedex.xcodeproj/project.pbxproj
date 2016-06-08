@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		103064261D0802520027C9E9 /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 103064251D0802520027C9E9 /* pokemon.csv */; };
 		108A5DA51D064E80007051D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108A5DA41D064E80007051D6 /* AppDelegate.swift */; };
 		108A5DA71D064E80007051D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108A5DA61D064E80007051D6 /* ViewController.swift */; };
 		108A5DAA1D064E80007051D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 108A5DA81D064E80007051D6 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		103064251D0802520027C9E9 /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
 		108A5DA11D064E80007051D6 /* Pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		108A5DA41D064E80007051D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		108A5DA61D064E80007051D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				108A5DA41D064E80007051D6 /* AppDelegate.swift */,
 				108A5DA61D064E80007051D6 /* ViewController.swift */,
 				108A5DA81D064E80007051D6 /* Main.storyboard */,
+				103064251D0802520027C9E9 /* pokemon.csv */,
 				108A5DAB1D064E80007051D6 /* Assets.xcassets */,
 				108A5DAD1D064E80007051D6 /* LaunchScreen.storyboard */,
 				108A5DB01D064E80007051D6 /* Info.plist */,
@@ -124,6 +127,7 @@
 			files = (
 				108A5DAF1D064E80007051D6 /* LaunchScreen.storyboard in Resources */,
 				108A5DAC1D064E80007051D6 /* Assets.xcassets in Resources */,
+				103064261D0802520027C9E9 /* pokemon.csv in Resources */,
 				108A5DAA1D064E80007051D6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +288,7 @@
 				108A5DB51D064E80007051D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
