@@ -5,6 +5,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="PokemonSolid.ttf">
+            <string>PokemonSolidNormal</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -23,9 +28,44 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M6p-bC-vHq">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="69"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S4g-PP-ZyT">
+                                        <rect key="frame" x="553" y="15" width="39" height="39"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="39" id="dRE-wl-dyK"/>
+                                            <constraint firstAttribute="height" constant="39" id="ezN-0K-W6A"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="39" id="oNF-bH-Dfg"/>
+                                        </constraints>
+                                        <state key="normal" image="music"/>
+                                        <connections>
+                                            <action selector="musicBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p5G-yB-fW6"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokedex" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wan-gZ-rJG">
+                                        <rect key="frame" x="206" y="18" width="189" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="SUV-l7-Whb"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="189" id="VV7-Dm-bBd"/>
+                                            <constraint firstAttribute="width" constant="189" id="qng-d7-N6I"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="29"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.34509803921568627" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="S4g-PP-ZyT" firstAttribute="top" secondItem="M6p-bC-vHq" secondAttribute="top" constant="15" id="5Ai-lv-c1x"/>
+                                    <constraint firstItem="Wan-gZ-rJG" firstAttribute="top" secondItem="M6p-bC-vHq" secondAttribute="top" constant="18" id="8At-ez-clq"/>
                                     <constraint firstAttribute="height" constant="69" id="GqF-26-7dT"/>
+                                    <constraint firstAttribute="trailing" secondItem="S4g-PP-ZyT" secondAttribute="trailing" constant="8" id="I0D-mW-NYe"/>
+                                    <constraint firstItem="S4g-PP-ZyT" firstAttribute="top" secondItem="M6p-bC-vHq" secondAttribute="top" constant="15" id="MzC-z9-tXX"/>
+                                    <constraint firstItem="S4g-PP-ZyT" firstAttribute="centerY" secondItem="Wan-gZ-rJG" secondAttribute="centerY" id="Rn6-Mv-Nu5"/>
+                                    <constraint firstItem="S4g-PP-ZyT" firstAttribute="trailing" secondItem="M6p-bC-vHq" secondAttribute="trailingMargin" id="fAZ-Fc-9JF"/>
+                                    <constraint firstItem="S4g-PP-ZyT" firstAttribute="centerY" secondItem="M6p-bC-vHq" secondAttribute="centerY" id="m8z-vC-skX"/>
+                                    <constraint firstItem="Wan-gZ-rJG" firstAttribute="centerX" secondItem="M6p-bC-vHq" secondAttribute="centerX" id="pL7-xM-qgi"/>
+                                    <constraint firstItem="Wan-gZ-rJG" firstAttribute="centerY" secondItem="M6p-bC-vHq" secondAttribute="centerY" id="yDO-DM-olD"/>
+                                    <constraint firstItem="Wan-gZ-rJG" firstAttribute="centerX" secondItem="M6p-bC-vHq" secondAttribute="centerX" id="ykx-41-rMc"/>
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zd4-H2-qlv">
@@ -132,5 +172,6 @@
     <resources>
         <image name="297" width="120" height="120"/>
         <image name="bg" width="1920" height="1200"/>
+        <image name="music" width="100" height="100"/>
     </resources>
 </document>
