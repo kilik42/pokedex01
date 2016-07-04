@@ -13,14 +13,29 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
     
     @IBOutlet weak var collection: UICollectionView!
     
+    var pokemon = [Pokemon]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         collection.delegate = self
         collection.dataSource = self
+
+        parsePokemonCSV()
+    }
+    
+    func parsePokemonCSV(){
         
+        let path = NSBundle.mainBundle().pathForResource("pokemon", ofType: "csv")
         
-        
+        do {
+            let csv = try CSV(contentsOfURL: path!)
+            let rows = csv.rows
+            
+            print(rows)
+        }catch let err as NSError{
+            print(err.debugDescription)
+        }
     }
 
     
